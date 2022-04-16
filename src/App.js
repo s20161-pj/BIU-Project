@@ -6,6 +6,7 @@ import Footer from './components/main/Footer/Footer';
 import Navbar from './components/main/Navbar/Navbar';
 import MainPage from "./components/pages/MainPage/MainPage";
 import StudentsPage from "./components/pages/StudentsPage/StudentsPage";
+import SubjectsPage from "./components/pages/SubjectsPage/SubjectsPage";
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
       </Route>
       <Route path="/students">
         <StudentsPage />
+      </Route>
+      <Route path="/subjects">
+        <SubjectsPage />
       </Route>
     <Footer></Footer>
     </div>

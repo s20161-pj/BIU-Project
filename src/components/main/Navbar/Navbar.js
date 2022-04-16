@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { Link } from 'react-router-dom';
 function Navbar() {
   const navLogo = "E-DZIEKANAT";
   const navMainPage = "STRONA GŁÓWNA";
@@ -13,9 +14,9 @@ function Navbar() {
       <div class="row">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <Link class="navbar-brand" to="/main">
               {navMainPage}
-            </a>
+            </Link>
             <button
               class="navbar-toggler"
               type="button"
@@ -29,15 +30,15 @@ function Navbar() {
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">
+                <Link class="nav-link active" aria-current="page" to="/students">
                   {navStudents}
-                </a>
-                <a class="nav-link" href="#">
+                </Link>
+                <Link class="nav-link" to="/subjects">
                   {navSubjects}
-                </a>
-                <a class="nav-link" href="#">
+                </Link>
+                <Link class="nav-link" to="#">
                   {navContatc}
-                </a>
+                </Link>
               </div>
             </div>
           </div>
