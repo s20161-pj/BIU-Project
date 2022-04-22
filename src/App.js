@@ -5,13 +5,13 @@ import './App.css';
 import Footer from './components/main/Footer/Footer';
 import Navbar from './components/main/Navbar/Navbar';
 import MainPage from "./components/pages/MainPage/MainPage";
-import StudentsPage from "./components/pages/StudentsPage/StudentsPage";
-import SubjectsPage from "./components/pages/SubjectsPage/SubjectsPage";
+import StudentsPage from "./components/pages/StudentsPage/StudentsPages";
+import SubjectsPage from './components/pages/SubjectsPage/SubjectsPage';
 
 
 function App() {
   return (
-    <div>
+    <div className="app">
     <Navbar></Navbar>
     <Route path="/main">
         <MainPage />

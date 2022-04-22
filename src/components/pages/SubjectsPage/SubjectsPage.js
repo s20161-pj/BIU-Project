@@ -1,6 +1,6 @@
 function SubjectsPage(){
     return(
-<div>
+<div className="=subjectPage">
     <h1>Subjects Page</h1>
 </div>
     );

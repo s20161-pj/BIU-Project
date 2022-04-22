@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import { Link } from 'react-router-dom';
+import { FaHouseDamage, FaEnvelope } from "react-icons/fa"
 function Navbar() {
   const navLogo = "E-DZIEKANAT";
   const navMainPage = "STRONA GŁÓWNA";
@@ -7,18 +8,19 @@ function Navbar() {
   const navSubjects = "PRZEDMIOTY";
   const navContatc = "KONTAKT";
   return (
-    <div class="container">
-      <div class="row">
-        <div class="logo">{navLogo}</div>
+    <div className="container">
+      <div className="row">
+        <div className="logo">{navLogo}</div>
       </div>
-      <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <Link class="navbar-brand" to="/main">
+      <div className="row">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container-fluid">
+            <FaHouseDamage /> 
+            <Link className="navbar-brand" to="/main">
               {navMainPage}
             </Link>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -26,17 +28,18 @@ function Navbar() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <Link class="nav-link active" aria-current="page" to="/students">
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div className="navbar-nav">
+                <Link className="nav-link active" aria-current="page" to="/students">
                   {navStudents}
                 </Link>
-                <Link class="nav-link" to="/subjects">
+                <Link className="nav-link" to="/subjects">
                   {navSubjects}
                 </Link>
-                <Link class="nav-link" to="#">
+                <Link className="nav-link" to="#">
+                <FaEnvelope/> 
                   {navContatc}
                 </Link>
               </div>
