@@ -1,6 +1,6 @@
 import "./StudentsPage.css";
-import React from "react";
-import StudentsPageComponent from "./StudentsPageComponent/StudentsPageComponent";
+import StudentsPageComponent from "../StudentsPageComponent/StudentsPageComponent";
+
 function StudentsPage() {
   return (
     <div className="studentsPage">

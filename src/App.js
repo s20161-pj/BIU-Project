@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Footer from './components/main/Footer/Footer';
 import Navbar from './components/main/Navbar/Navbar';
-import MainPage from "./components/pages/MainPage/MainPage";
-import StudentsPage from "./components/pages/StudentsPage/StudentsPages";
+import MainPage from "./components/pages/MainPage/MainPage/MainPage";
+import StudentsPage from "./components/pages/StudentsPage/StudentsPage/StudentsPages";
 import SubjectsPage from './components/pages/SubjectsPage/SubjectsPage';
 
 

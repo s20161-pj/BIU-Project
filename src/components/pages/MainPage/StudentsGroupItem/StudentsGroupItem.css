@@ -1,0 +1,26 @@
+.studentsGroupItem{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    padding: 1.0rem;
+    margin: 1rem 0;
+    background-color:rgb(241, 241, 241);
+    width:250px;
+    height: 250px;
+    margin-left: 1.0rem;
+  }
+  .studentGroupName {
+  display: flex;
+  align-items: center;
+  }
+  .studentGroupName h2 {
+    font-size: 2.5rem;
+    flex: 1;
+    margin: 0 1rem;
+    color: black;
+    font-weight: lighter;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+  

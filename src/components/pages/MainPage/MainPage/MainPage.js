@@ -1,7 +1,6 @@
 
 import './MainPage.css';
-import React from 'react';
-import StudentGroupComponent from './StudentGroupComponent/StudentGroupComponent';
+import StudentGroupComponent from '../StudentsGroupComponent/StudentsGroupComponent';
 function MainPage() {
   return (
     <div className="mainPage">
@@ -11,8 +10,8 @@ function MainPage() {
         </div>
       </div>
       <div className="row">
-        <div className="col"><StudentGroupComponent></StudentGroupComponent></div>
-        <div className="col"><StudentGroupComponent></StudentGroupComponent></div>
+        <div className="col"><StudentGroupComponent/></div>
+        <div className="col"><StudentGroupComponent/></div>
       </div>
     </div>
   );
