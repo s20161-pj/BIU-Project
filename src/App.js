@@ -8,6 +8,7 @@ import MainPage from "./components/pages/MainPage/MainPage/MainPage";
 import StudentsPage from "./components/pages/StudentsPage/StudentsPage/StudentsPages";
 import SubjectsPage from './components/pages/SubjectsPage/SubjectsPage';
 import AddStudentForm from "./components/pages/AddStudentForm/AddStudentForm";
+import ContactComponent from "./components/pages/ContactComponent/ContactComponent";
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
       </Route>
       <Route path="/add-students">
         <AddStudentForm />
+      </Route>
+      <Route path="/contact">
+        <ContactComponent />
       </Route>
     <Footer></Footer>
     </div>

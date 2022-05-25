@@ -6,7 +6,7 @@ function Navbar() {
   const navMainPage = "STRONA GŁÓWNA";
   const navStudents = "STUDENCI";
   const navSubjects = "PRZEDMIOTY";
-  const navContatc = "KONTAKT";
+  const navContact = "KONTAKT";
   return (
     <div className="container">
       <div className="row">
@@ -38,9 +38,9 @@ function Navbar() {
                 <Link className="nav-link" to="/subjects">
                   {navSubjects}
                 </Link>
-                <Link className="nav-link" to="#">
+                <Link className="nav-link" to="/contact">
                 <FaEnvelope/> 
-                  {navContatc}
+                  {navContact}
                 </Link>
               </div>
             </div>

@@ -1,9 +1,10 @@
 import "./StudentsPage.css";
-import StudentsPageComponent from "../StudentsPageComponent/StudentsPageComponent";
+import { StudentsPageComponentStacionary } from "../StudentsPageComponent/StudentsPageComponentStacionary";
+import { StudentsPageComponentNonStacionary } from "../StudentsPageComponent/StudentsPageComponentNonStacionary";
 import { useHistory } from "react-router-dom";
 
 
-function StudentsPage() {
+export default function StudentsPage() {
   let history = useHistory();
 
   function clickHandler() {
@@ -17,11 +18,10 @@ function StudentsPage() {
           <div className="col-5"><button onClick={clickHandler}  type="button" className="btn btn-secondary customButton">Dodaj nowego studenta do listy</button></div>
         </div>
       <div className="row">
-        <div className="col-sm"><StudentsPageComponent/></div>
-        <div className="col-sm"><StudentsPageComponent/></div>
-  
+        <div className="col-sm"><StudentsPageComponentStacionary/></div>
+        <div className="col-sm"><StudentsPageComponentNonStacionary/></div>
       </div>
     </div>
   );
 }
-export default StudentsPage;
+
