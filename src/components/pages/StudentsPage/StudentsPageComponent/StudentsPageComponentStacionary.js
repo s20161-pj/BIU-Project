@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 export function StudentsPageComponentStacionary() {
   const [studentsData, setStudentsData]=useState(data);
-  const [formState, setFormState] = useState({ name: "", surname: "", indexNumber: "", typeOfStudies: "", group: "|"});
+  const [formState, setFormState] = useState({ name: "", surname: "", indexNumber: "", typeOfStudies: "", group: ""});
 
   return (
     <div className="studentsPageComponent">
@@ -16,11 +16,11 @@ export function StudentsPageComponentStacionary() {
   <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>IndexNumber</th>
-            <th>typeOfStudies</th>
-            <th>Group</th>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Numer indeksu</th>
+            <th>Rodzaj studiów</th>
+            <th>Grupa</th>
           </tr>
         </thead>
         <tbody>
@@ -31,6 +31,7 @@ export function StudentsPageComponentStacionary() {
             <td>{studentData.indexNumber}</td>
             <td>{studentData.typeOfStudies}</td>
             <td>{studentData.group}</td>
+            <button>Szczegóły</button>
           </tr>))}
           
         </tbody>

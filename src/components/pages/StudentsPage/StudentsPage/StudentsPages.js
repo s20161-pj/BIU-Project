@@ -14,7 +14,7 @@ export default function StudentsPage() {
   return (
     <div className="studentsPage">
         <div className="row">
-          <div className="col-7"><h3 className="box">GRUPY STUDENCKIE - BIEŻĄCY ROK AKADEMICKI</h3></div>
+          <div className="col-7"><h3 className="box">LISTA STUDENTÓW - BIEŻĄCY ROK AKADEMICKI</h3></div>
           <div className="col-5"><button onClick={clickHandler}  type="button" className="btn btn-secondary customButton">Dodaj nowego studenta do listy</button></div>
         </div>
       <div className="row">

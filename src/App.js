@@ -10,7 +10,6 @@ import SubjectsPage from './components/pages/SubjectsPage/SubjectsPage';
 import AddStudentForm from "./components/pages/AddStudentForm/AddStudentForm";
 import ContactComponent from "./components/pages/ContactComponent/ContactComponent";
 
-
 function App() {
   return (
     <div className="app">
@@ -30,6 +29,7 @@ function App() {
       <Route path="/contact">
         <ContactComponent />
       </Route>
+
     <Footer></Footer>
     </div>
   );
