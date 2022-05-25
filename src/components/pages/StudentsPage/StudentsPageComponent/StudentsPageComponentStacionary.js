@@ -1,6 +1,6 @@
 
 import "./StudentsPageComponent.css";
-import data from  "./mock-data-stacionary.json";
+import data from  "./mocks/mock-data-stacionary.json";
 import React, { useState } from "react";
 
 export function StudentsPageComponentStacionary() {

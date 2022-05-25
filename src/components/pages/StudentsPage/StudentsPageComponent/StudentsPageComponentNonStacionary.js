@@ -1,6 +1,6 @@
 
 import "./StudentsPageComponent.css";
-import data from  "./mock-data-nonstacionary.json";
+import data from  "./mocks/mock-data-nonstacionary.json";
 import React, { useState } from "react";
 
 export function StudentsPageComponentNonStacionary () {
