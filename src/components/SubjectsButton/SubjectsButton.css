@@ -1,0 +1,27 @@
+.subject-button {
+  display: block;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: rgb(241, 241, 241);
+  width: 25%;
+  height: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.subject-button h2 {
+  font-size: 2.5rem;
+  flex: 1;
+  margin: 0 1rem;
+  color: black;
+  font-weight: lighter;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.subject-button__name {
+  display: flex;
+  align-items: center;
+}

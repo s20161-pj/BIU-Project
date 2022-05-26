@@ -1,0 +1,22 @@
+li {
+  width: 25%;
+}
+
+li > a {
+  width: 100%;
+  height: 100%;
+  padding: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+li > a:hover {
+  background: #ec1f97;
+  color: #fff;
+}
+
+li > a > svg {
+  margin-right: 5%;
+}

@@ -1,0 +1,22 @@
+{
+  "stacionary": [
+    {
+      "id": "1",
+      "name": "Jan",
+      "surname": "Kowalski",
+      "indexNumber": "123456",
+      "typeOfStudies": "stacjonarne",
+      "group": "III"
+    }
+  ],
+  "nonstacionary": [
+    {
+      "id": "1",
+      "name": "Ula",
+      "surname": "Kula",
+      "indexNumber": "654321",
+      "typeOfStudies": "niestacjonarne",
+      "group": "II"
+    }
+  ]
+}

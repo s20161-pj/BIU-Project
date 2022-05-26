@@ -1,0 +1,38 @@
+.studentForm { 
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top:50px;
+    text-align: center;
+    border:solid;
+    border-color: grey;
+    border-width: 1px;
+    padding:20px;
+    background-color: #f2f2f2;
+    border-radius: 20px 10px; 
+  }
+  
+  .studentForm label{
+      text-align: center;
+      display: block;
+      
+  }
+  .studentForm h2{
+      font-size: 20px;
+      color:#f1356d;
+      margin-bottom: 30px;
+      text-decoration: underline;
+  }
+  .studentForm input, .studentForm select{
+      width: 100%;
+      padding: 6px, 10px;
+      margin: 10px 0;
+      border:1px, solid #ccc;
+      box-sizing: border-box;
+      display: block;
+      background-color: white;
+      
+  }
+  .studentForm button{
+      margin-top: 40px;
+      margin-left: 20px;
+  }
