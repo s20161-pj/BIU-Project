@@ -1,6 +1,7 @@
 import "./StudentsPageTable.css";
-
+import { useNavigate } from "react-router-dom";
 export default function StudentsPageTable({ data, studyType }) {
+  let navigate = useNavigate();
   return (
     <section className="col-sm studentsPageComponent row">
       <h2 className="col">{studyType}</h2>
@@ -24,7 +25,12 @@ export default function StudentsPageTable({ data, studyType }) {
                 <td>{typeOfStudies}</td>
                 <td>{group}</td>
                 <td>
-                  <button>Szczegóły</button>
+                <button
+            onClick={() => navigate("/student-details")}
+            className="btn btn-secondary custom-button"
+          >
+            Szczegóły
+          </button>
                 </td>
               </tr>
             )

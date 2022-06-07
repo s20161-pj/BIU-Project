@@ -1,0 +1,31 @@
+.nameOfGroup {
+  border: 1px solid #000;
+  width: 10em;
+  height: 5em;
+  text-align: center;
+  padding-top: 1.5em;
+  margin-left: 5em;
+  margin-bottom: 2.5em;
+  margin-right: 2.5em;
+  float: left;
+}
+.studentAssignment {
+  border: 1px solid #000;
+  width: 15em;
+  height: 5em;
+  text-align: center;
+  padding-top: 1.5em;
+  margin-left: 5em;
+  float: left;
+}
+.studentsList {
+  border: 1px solid #000;
+  width: 50em;
+  height: 30em;
+  text-align: center;
+  padding-top: 1.5em;
+  float: left;
+}
+.studentsListOfGroup {
+  margin-bottom: 30em;
+}

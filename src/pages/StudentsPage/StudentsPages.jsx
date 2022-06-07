@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 import { StudentsContext } from "../../contexts/StudentsContext/StudentsContext";
 
-import StudentsPageTable from "../../components/StudentsPageTable/StudenPageTable";
+import StudentsPageTable from "../../components/StudentsPageTable/StudentPageTable";
 
 export default function StudentsPage() {
   let navigate = useNavigate();

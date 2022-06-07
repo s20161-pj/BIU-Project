@@ -1,0 +1,19 @@
+.subjectName{
+    border: 1px solid #000;
+    width: 50em;
+    height: 5em;
+    text-align: center;
+    padding-top: 1.5em;
+    margin:auto;
+    margin-bottom: 2em;
+
+
+}
+.groupsAssignedTheSubject{
+    border: 1px solid #000;
+    width: 50em;
+    height: 50em;
+    text-align: center;
+    padding-top: 1.5em;
+    margin:auto;
+}

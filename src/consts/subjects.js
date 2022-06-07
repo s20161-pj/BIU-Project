@@ -1,10 +1,10 @@
 export const subjects = [
-  { id: 1, subjectName: "NAZWA I" },
-  { id: 2, subjectName: "NAZWA II" },
-  { id: 3, subjectName: "NAZWA III" },
-  { id: 4, subjectName: "NAZWA IV" },
-  { id: 5, subjectName: "NAZWA V" },
-  { id: 6, subjectName: "NAZWA VI" },
-  { id: 7, subjectName: "NAZWA VII" },
-  { id: 8, subjectName: "NAZWA VIII" },
+  { id: 1, subjectName: "MATEMATYKA" },
+  { id: 2, subjectName: "PROGRAMOWANIE" },
+  { id: 3, subjectName: "SYSTEMY OPERACYJNE" },
+  { id: 4, subjectName: "RELACYJNE BAZY DANYCH" },
+  { id: 5, subjectName: "SIECI KOMPUTEROWE" },
+  { id: 6, subjectName: "ELEKTRONIKA" },
+  { id: 7, subjectName: "ZARZĄDZANIE PROJEKTEM" },
+  { id: 8, subjectName: "JĘZYK OBCY" },
 ];

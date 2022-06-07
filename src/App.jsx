@@ -8,8 +8,11 @@ import StudentsPage from "./pages/StudentsPage/StudentsPages";
 import SubjectsPage from "./pages/SubjectsPage/SubjectsPage";
 import AddStudentForm from "./pages/AddStudentForm/AddStudentForm";
 import ContactComponent from "./pages/ContactComponent/ContactComponent";
-
+import StudentDetails from "./pages/StudentDetails/StudentDetails";
+import StudentsListOfGroup from "./pages/StudentsListOfGroup/StudentsListOfGroup";
+import GroupsDoingTheSubject from "./pages/GroupsDoingTheSubject/GroupsDoingTheSubject";
 import StudentsContextProvider from "./contexts/StudentsContext/StudentsContextProvider";
+
 
 export default function App() {
   return (
@@ -23,6 +26,9 @@ export default function App() {
           <Route path="/add-students" element={<AddStudentForm />} />
           <Route path="/contact" element={<ContactComponent />} />
           <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/student-details" element={<StudentDetails />} />
+          <Route path="/students-listOfGroup" element={<StudentsListOfGroup />} />
+          <Route path="/groupsDoingTheSubjects" element={<GroupsDoingTheSubject />} />
         </Routes>
       </StudentsContextProvider>
       <Footer />
