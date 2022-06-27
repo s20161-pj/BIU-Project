@@ -1,12 +1,12 @@
 import "./SubjectsPage.css";
 
-import { subjects } from "../../consts/subjects";
+import mock_subjects from "../../mocks/mock_subjects.json" 
 
 import SubjectsList from "../../components/SubjectsList/SubjectsList";
 
 export default function SubjectsPage() {
   return (
-    <div className="subjectsPage">
+    <div className="subjects-page">
       <div className="row">
         <div className="col">
           <h3>LISTA PRZEDMIOTÓW</h3>
@@ -14,7 +14,7 @@ export default function SubjectsPage() {
       </div>
       <div className="row">
         <div className="col">
-          <SubjectsList subjects={subjects} />
+          <SubjectsList subjects={mock_subjects.subjects} />
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
-.students-list {
+.subjects-list {
+  display: flex;
   flex-wrap: wrap;
-
 }
+

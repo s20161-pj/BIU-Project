@@ -1,0 +1,41 @@
+.students-list--options-panel {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.students-list--options-panel > * {
+  margin-bottom: 2rem;
+}
+
+.students-list--options-panel > *:last-child {
+  margin-bottom: 0;
+}
+
+.name-of-group {
+  width: 10em;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-of-group > * {
+  margin: 0;
+}
+
+.student-assignment {
+  width: 15em;
+  height: 5em;
+  border: 1px solid #000;
+  text-align: center;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+}

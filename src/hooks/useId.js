@@ -1,9 +1,12 @@
 export default function useId() {
-  const generateNewId = (dataArray) => {
-    const lastID = dataArray[dataArray.length - 1].id;
-    const newId = (Number(lastID) + 1).toString();
+  const generateNewId = (state) => {
+    // count all students number
+    const lastID = state.stacionary.length + state.nonstacionary.length;
 
-    return newId;
+    // create id by num of students
+    const newId = lastID + 1;
+
+    return newId.toString();
   };
 
   return { generateNewId };

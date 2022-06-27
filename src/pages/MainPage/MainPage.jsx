@@ -14,8 +14,14 @@ export default function MainPage() {
       </div>
       <div className="row">
         <div className="col">
-          <StudentGroupsList groups={mock_students_groups.stationary} />
-          <StudentGroupsList groups={mock_students_groups.nonstationary} />
+          <StudentGroupsList
+            title="Studia Stacjonarne"
+            groups={mock_students_groups.stationary}
+          />
+          <StudentGroupsList
+            title="Studia Niestacjonarne"
+            groups={mock_students_groups.nonstationary}
+          />
         </div>
       </div>
     </div>

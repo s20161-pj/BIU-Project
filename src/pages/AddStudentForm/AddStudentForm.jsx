@@ -5,16 +5,17 @@ import "./AddStudentForm.css";
 import { useForm } from "react-hook-form";
 
 import useId from "../../hooks/useId";
-import useTranslatedTypeOfStudy from "../../hooks/useTranslatedTypeOfStudy";
 
 import { StudentsContext } from "../../contexts/StudentsContext/StudentsContext";
 
+import { translatedTypeOfStudyPL } from "../../i18n/translateTypeOfStudy";
+
 export default function AddStudentForm() {
   const { register, handleSubmit } = useForm();
-  const { studentsState, studentsDispatch } = useContext(StudentsContext);
 
   const { generateNewId } = useId();
-  const { translateTypeOfStudy } = useTranslatedTypeOfStudy();
+
+  const { studentsState, studentsDispatch } = useContext(StudentsContext);
 
   const createStudent = (
     { name, surname, indexNumber, typeOfStudies, group },
@@ -24,7 +25,7 @@ export default function AddStudentForm() {
     name: name,
     surname: surname,
     indexNumber: indexNumber,
-    typeOfStudies: translateTypeOfStudy(typeOfStudies),
+    typeOfStudies: translatedTypeOfStudyPL(typeOfStudies),
     group: group,
   });
 
@@ -32,11 +33,10 @@ export default function AddStudentForm() {
     studentsDispatch({
       type: "ADD_STUDENT",
       typeOfStudies: data.typeOfStudies,
-      newStudent: createStudent(
-        data,
-        generateNewId(studentsState[data.typeOfStudies])
-      ),
+      newStudent: createStudent(data, generateNewId(studentsState)),
     });
+
+    alert("Student Dodany");
   };
 
   return (
@@ -87,4 +87,4 @@ export default function AddStudentForm() {
       </form>
     </div>
   );
-};
+}

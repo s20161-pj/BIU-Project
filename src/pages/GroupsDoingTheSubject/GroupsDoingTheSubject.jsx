@@ -1,16 +1,39 @@
+import React from "react";
+
 import "./GroupsDoingTheSubject.css";
 
+import { useParams } from "react-router-dom";
+
+import mock_subjects from "../../mocks/mock_subjects.json";
+
+import SubjectGroupsList from "../../components/SubjectGroupsList/SubjectGroupsList";
+
 export default function StudentsDoingTheSubject() {
+  let { subject } = useParams();
+
+  const subjectHeader = subject.toUpperCase().replace(/-/g, " ");
+
+  const subjectGroups = mock_subjects.subjects.filter(
+    ({ subjectName }) => subjectName === subjectHeader
+  );
+
+  const stationarySubjectGroups = subjectGroups[0].groups.stationary;
+  const nostationarySubjectGroups = subjectGroups[0].groups.nostationary;
+
   return (
-    <div className="studentsDointTheSubject-page">
-      <h2>
-        Informacja o przypisanych grupach do realizowanych przedmiotów, np.
-        GRUPA 1, GRUPA 2 realizuje przedmiot MATEMATYKA
-      </h2>
-      <div className="subjectName">Nazwa przedmiotu</div>
-      <div className="groupsAssignedTheSubject">
-        Grupy realizujące przedmiot
-      </div>
-    </div>
+    <section className="subjects-groups">
+      <h2>{subjectHeader}</h2>
+      <article className="groups-assigned-the-subject">
+        <h3>Grupy realizujące przedmiot</h3>
+        <SubjectGroupsList
+          label="Grupy Stacjonarne"
+          subjectGroups={stationarySubjectGroups}
+        />
+        <SubjectGroupsList
+          label="Grupy Niestacjonarne"
+          subjectGroups={nostationarySubjectGroups}
+        />
+      </article>
+    </section>
   );
 }

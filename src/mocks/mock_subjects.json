@@ -1,0 +1,68 @@
+{
+  "subjects": [
+    {
+      "id": "1",
+      "subjectName": "MATEMATYKA",
+      "groups": {
+        "stationary": ["I", "II"],
+        "nostationary": ["I"]
+      }
+    },
+    {
+      "id": "2",
+      "subjectName": "PROGRAMOWANIE",
+      "groups": {
+        "stationary": ["II", "III"],
+        "nostationary": ["II", "III"]
+      }
+    },
+    {
+      "id": "3",
+      "subjectName": "SYSTEMY OPERACYJNE",
+      "groups": {
+        "stationary": ["I"],
+        "nostationary": ["I"]
+      }
+    },
+    {
+      "id": "4",
+      "subjectName": "RELACYJNE BAZY DANYCH",
+      "groups": {
+        "stationary": ["II"],
+        "nostationary": ["III"]
+      }
+    },
+    {
+      "id": "5",
+      "subjectName": "SIECI KOMPUTEROWE",
+      "groups": {
+        "stationary": ["III"],
+        "nostationary": ["II"]
+      }
+    },
+    {
+      "id": "6",
+      "subjectName": "ELEKTRONIKA",
+      "groups": {
+        "stationary": ["II", "III"],
+        "nostationary": ["III", "IV"]
+      }
+    },
+    {
+      "id": "7",
+      "subjectName": "ZARZĄDZANIE PROJEKTEM",
+      "groups": {
+        "stationary": ["I", "II", "III"],
+        "nostationary": ["II", "III", "IV"]
+      }
+    },
+    {
+      "id": "8",
+      "subjectName": "JĘZYK OBCY",
+      "groups": {
+        "stationary": ["I", "II", "III"],
+        "nostationary": ["II", "III", "IV"]
+      }
+    }
+  ]
+}

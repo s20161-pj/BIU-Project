@@ -1,0 +1,11 @@
+.subject-groups-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subject-groups-list li:first-child {
+  margin-bottom: 2%;
+  font-weight: bold;
+}

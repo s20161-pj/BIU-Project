@@ -1,14 +1,14 @@
 {
   "stationary": [
-    { "id": 1, "studentsGroupName": "Grupa I" },
-    { "id": 2, "studentsGroupName": "Grupa II" },
-    { "id": 3, "studentsGroupName": "Grupa III" },
-    { "id": 4, "studentsGroupName": "Grupa IV" }
+    { "id": 1, "studentsGroupName": "Grupa I", "groupIndex": "I" },
+    { "id": 2, "studentsGroupName": "Grupa II", "groupIndex": "II" },
+    { "id": 3, "studentsGroupName": "Grupa III", "groupIndex": "III" },
+    { "id": 4, "studentsGroupName": "Grupa IV", "groupIndex": "IV" }
   ],
   "nonstationary": [
-    { "id": 5, "studentsGroupName": "Grupa I" },
-    { "id": 6, "studentsGroupName": "Grupa II" },
-    { "id": 7, "studentsGroupName": "Grupa III" },
-    { "id": 8, "studentsGroupName": "Grupa IV" }
+    { "id": 5, "studentsGroupName": "Grupa I", "groupIndex": "I" },
+    { "id": 6, "studentsGroupName": "Grupa II", "groupIndex": "II" },
+    { "id": 7, "studentsGroupName": "Grupa III", "groupIndex": "III" },
+    { "id": 8, "studentsGroupName": "Grupa IV", "groupIndex": "IV" }
   ]
 }

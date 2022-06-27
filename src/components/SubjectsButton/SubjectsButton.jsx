@@ -1,20 +1,21 @@
 import "./SubjectsButton.css";
+
 import { useNavigate } from "react-router-dom";
+
 export default function SubjectsButton({ subjectName }) {
   let navigate = useNavigate();
+
+  const subjectSlugParam = subjectName.toLowerCase().replace(/ /g, "-");
+
   return (
     <li className="subject-button">
-      <div className="subject-button__name">
-        <h2>{subjectName}</h2>
-      </div>
-      <div>
+      <h2>{subjectName}</h2>
       <button
-            onClick={() => navigate("/groupsDoingTheSubjects")}
-            className="btn btn-secondary custom-button"
-          >
-            Szczegóły
-          </button>
-      </div>
+        className="btn btn-secondary"
+        onClick={() => navigate(`/subjects/groups/${subjectSlugParam}`)}
+      >
+        Szczegóły
+      </button>
     </li>
   );
 }

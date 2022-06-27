@@ -1,31 +1,30 @@
-.nameOfGroup {
-  border: 1px solid #000;
-  width: 10em;
-  height: 5em;
-  text-align: center;
-  padding-top: 1.5em;
-  margin-left: 5em;
-  margin-bottom: 2.5em;
-  margin-right: 2.5em;
-  float: left;
+.students-list-of-group {
+  margin-bottom: 30em;
 }
-.studentAssignment {
-  border: 1px solid #000;
-  width: 15em;
-  height: 5em;
-  text-align: center;
-  padding-top: 1.5em;
-  margin-left: 5em;
-  float: left;
+
+.students-list-of-group-wrapper {
+  display: flex;
+  justify-content: flex-start;
+
 }
-.studentsList {
+.students-list {
   border: 1px solid #000;
   width: 50em;
   height: 30em;
   text-align: center;
   padding-top: 1.5em;
-  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.studentsListOfGroup {
-  margin-bottom: 30em;
+
+.list-of-students {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-of-students > li {
+  width: 100%;
 }

@@ -22,13 +22,13 @@ export default function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/students" element={<StudentsPage />} />
+          <Route path="/students/group/:id" element={<StudentsListOfGroup />} />
           <Route path="/subjects" element={<SubjectsPage />} />
+          <Route path="/subjects/groups/:subject" element={<GroupsDoingTheSubject />} />
           <Route path="/add-students" element={<AddStudentForm />} />
           <Route path="/contact" element={<ContactComponent />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
           <Route path="/student-details" element={<StudentDetails />} />
-          <Route path="/students-listOfGroup" element={<StudentsListOfGroup />} />
-          <Route path="/groupsDoingTheSubjects" element={<GroupsDoingTheSubject />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </StudentsContextProvider>
       <Footer />

@@ -1,19 +1,25 @@
-.subjectName{
-    border: 1px solid #000;
-    width: 50em;
-    height: 5em;
-    text-align: center;
-    padding-top: 1.5em;
-    margin:auto;
-    margin-bottom: 2em;
-
-
+.subjects-groups h2 {
+  text-align: center;
 }
-.groupsAssignedTheSubject{
-    border: 1px solid #000;
-    width: 50em;
-    height: 50em;
-    text-align: center;
-    padding-top: 1.5em;
-    margin:auto;
+
+.groups-assigned-the-subject {
+  border: 1px solid #000;
+  width: 50em;
+  height: 50em;
+  text-align: center;
+  padding-top: 1.5em;
+  margin: auto;
+}
+
+.groups-assigned-the-subject > * {
+  margin-bottom: 10%;
+}
+
+.groups-assigned-the-subject > *:last-child {
+  margin-bottom: 0;
+}
+
+.groups-assigned-the-subject h3 {
+  font-weight: 400;
+  font-size: 1.35rem;
 }
