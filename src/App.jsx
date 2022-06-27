@@ -27,7 +27,7 @@ export default function App() {
           <Route path="/subjects/groups/:subject" element={<GroupsDoingTheSubject />} />
           <Route path="/add-students" element={<AddStudentForm />} />
           <Route path="/contact" element={<ContactComponent />} />
-          <Route path="/student-details" element={<StudentDetails />} />
+          <Route path="/student-details/:typeOfStudies/:id" element={<StudentDetails />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </StudentsContextProvider>

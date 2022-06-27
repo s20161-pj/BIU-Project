@@ -26,7 +26,8 @@ export default function StudentsPageTable({ data, studyType }) {
                 <td>{group}</td>
                 <td>
                 <button
-            onClick={() => navigate("/student-details")}
+           // onClick={() => navigate(`/student-details/${id}`)}
+            onClick={() => navigate(`/student-details/${typeOfStudies}/${id}`)}
             className="btn btn-secondary custom-button"
           >
             Szczegóły

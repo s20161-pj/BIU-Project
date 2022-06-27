@@ -13,10 +13,10 @@
 }
 
 .subject-button h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 1rem;
   color: black;
   font-weight: lighter;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
 }

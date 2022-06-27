@@ -1,5 +1,13 @@
+
 .subjects-list {
   display: flex;
   flex-wrap: wrap;
+  
 }
+.subjects-button{
+  font-size: 3px;
+  width: 250px;
+  height:250px;
+}
+
 
